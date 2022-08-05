@@ -1,7 +1,6 @@
 # VL
 
 Authors: Jaemin Cho, Jie Lei, Hao Tan, and Mohit Bansal
-Paper (To appear in ICML 2021)
 
 Google colab link for the Coco Captioning - https://colab.research.google.com/drive/1dog1qC5LEsl3IWMBUuok_ztpHEfDnSBI#scrollTo=U8l4RJ0XRPEm
 
