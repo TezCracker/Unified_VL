@@ -5,7 +5,7 @@ Authors: Jaemin Cho, Jie Lei, Hao Tan, and Mohit Bansal
 Google colab link for the Coco Captioning - https://colab.research.google.com/drive/1dog1qC5LEsl3IWMBUuok_ztpHEfDnSBI#scrollTo=U8l4RJ0XRPEm
 
 We evaluate VL-adapter in a unified multi-task
-setup on both image-text and video-text benchmarks. For the image-text tasks, we use four diverse V&L datasets: VQAv2, GQA, NLVR2, and MSCOCO image captioning. For video-text tasks, we use TVQA, How2QA, TVC, and YC2C. 
+For the image-text tasks, we use four diverse V&L datasets: VQAv2, GQA, NLVR2, and MSCOCO image captioning.
 
 -- Instal process
 # Install all python dependencies
