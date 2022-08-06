@@ -120,7 +120,7 @@ gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
 
 --Pretraining on COCO+VG
 
-# Pretraining with 4 gpus
+Pretraining with 4 gpus
 cd VL-T5/
 bash scripts/COCOVG_pretrain_VLT5.sh 4
 bash scripts/COCOVG_pretrain_VLBart.sh 4
