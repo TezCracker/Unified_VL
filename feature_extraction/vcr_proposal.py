@@ -10,7 +10,7 @@ from pathlib import Path
 import argparse
 import json
 
-
+# To take the VCR Dataset of the all the images
 class VCRDataset(Dataset):
     def __init__(self, vcr_dir, vcr_images_dir, split='val'):
 
@@ -54,7 +54,8 @@ class VCRDataset(Dataset):
         }
 
 if __name__ == "__main__":
-
+#
+#Mail function
     parser = argparse.ArgumentParser()
     parser.add_argument('--batchsize', default=1, type=int, help='batch_size')
     parser.add_argument('--vcrroot', type=str, default='/ssd-playpen/home/jmincho/workspace/datasets/VCR/')
@@ -70,7 +71,7 @@ if __name__ == "__main__":
     if not out_dir.exists():
         out_dir.mkdir()
 
-    # print('Load images from', coco_img_split_dir)
+ 
 
     dataset = VCRDataset(vcr_dir, vcr_images_dir, args.split)
     print('# Images:', len(dataset))
