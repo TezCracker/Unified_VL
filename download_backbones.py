@@ -5,6 +5,7 @@ from transformers import BartForConditionalGeneration, BartTokenizer
 if __name__ == '__main__':
 
 
+    # tokenizer is used in the T5-base and BART-base
     print('Downloading checkpoints if not cached')
     print('T5-base')
     model = T5ForConditionalGeneration.from_pretrained('t5-base')
