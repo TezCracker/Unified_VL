@@ -30,15 +30,15 @@ python -c "import language_evaluation; language_evaluation.download('coco')"
         utils.py, dist_utils.py                               <= utility functions
     snap/                                                     <= store weight checkpoints
     scripts/                                                  <= bash scripts for pretraining and finetuning
-```
+
 
 Image-text dataset
 checkout the link [link](https://drive.google.com/file/d/1O_RU1iFh_sbItZCTkOHUrbVIQQ_89Djj/view?usp=sharing) to download the processed CLIP features.Better to use [gdrive](https://github.com/prasmussen/gdrive) to download it. Unzip the downloaded file and arrange the folders following the format which is shown in the "Code Structure."
 
 when downloading the data from dgrive, Use the following commands.
-```
+
 gdrive download 1O_RU1iFh_sbItZCTkOHUrbVIQQ_89Djj
-```
+
 
 Extract the CLIP features
 Please refer to `feature_extraction` for more details.
@@ -51,47 +51,47 @@ The following scripts can run every approach with the best hyper-parameters.
 
 --Image dataset
 
-```bash
+
 # Full fine-tuning
 cd VL-T5/
-bash scripts/image/full_finetuning.sh 1
+ scripts/image/full_finetuning.sh 1
 
 # Single Adapter
 cd VL-T5/
-bash scripts/image/single_adapter.sh 1
+ scripts/image/single_adapter.sh 1
 
 # Multiple Adapters
 cd VL-T5/
-bash scripts/image/multiple_adapters.sh 1
+ scripts/image/multiple_adapters.sh 1
 
 # Hyperformer
 cd VL-T5/
-bash scripts/image/hyperformer.sh 1
+ scripts/image/hyperformer.sh 1
 
 # Single Compacter
 cd VL-T5/
-bash scripts/image/single_compacter.sh 1
+ scripts/image/single_compacter.sh 1
 
 # Multiple Compacters
 cd VL-T5/
-bash scripts/image/multiple_compacters.sh 1
+ scripts/image/multiple_compacters.sh 1
 
 # Single LoRA
 cd VL-T5/
-bash scripts/image/single_lora.sh 1
+ scripts/image/single_lora.sh 1
 
 # Multiple LoRA
 cd VL-T5/
-bash scripts/image/multiple_lora.sh 1
+ scripts/image/multiple_lora.sh 1
 
 # Single Prompt
 cd VL-T5/
-bash scripts/image/single_prompt.sh 1
+ scripts/image/single_prompt.sh 1
 
 # Multiple Prompts
 cd VL-T5/
-bash scripts/image/multiple_prompts.sh 1
-```
+ scripts/image/multiple_prompts.sh 1
+
 
 --Download Pre-trained models / Pre-extracted features
 We host model checkpoints and features via google drive.
@@ -114,14 +114,14 @@ VCR pretraining (2nd stage)
 
 ---Dataset Preparation / Feature extraction
 - Download `datasets/` from [Google Drive](https://drive.google.com/drive/folders/1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf?usp=sharing)
-```bash
+
 gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
-```
+
 
 --Pretraining on COCO+VG
-```bash
+
 # Pretraining with 4 gpus
 cd VL-T5/
 bash scripts/COCOVG_pretrain_VLT5.sh 4
 bash scripts/COCOVG_pretrain_VLBart.sh 4
-```
+
