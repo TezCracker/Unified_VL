@@ -2,12 +2,15 @@
 
 Authors: Jaemin Cho, Jie Lei, Hao Tan, and Mohit Bansal
 
-Google colab link for the Coco Captioning - https://colab.research.google.com/drive/1dog1qC5LEsl3IWMBUuok_ztpHEfDnSBI#scrollTo=U8l4RJ0XRPEm
+File name - COCO Vision to Text.ipynb. 
+Google colab link for the Coco Captioning  - https://colab.research.google.com/drive/1dog1qC5LEsl3IWMBUuok_ztpHEfDnSBI#scrollTo=U8l4RJ0XRPEm
 
 #
+File name - VQA.ipynb. 
 Google colab link for the VQA - https://colab.research.google.com/drive/1EtjFWl_Mi2G865RKRK6evgwQmnFZBhqU#scrollTo=hlDZ0LkPMf48
 
 #
+File name - VQA_Results.ipynb. 
 Google colab link for the VQA Result - https://colab.research.google.com/drive/1IgFcG6c4zgVMbQo9k8ZsCJEBhJLDslRP#scrollTo=GXB4QTHAoE57
 
 We evaluate VL-adapter in a unified multi-task
