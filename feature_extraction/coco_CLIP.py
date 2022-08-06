@@ -1,16 +1,4 @@
-"""
-Preprocess a raw json dataset into features files for use in data_loader.py
 
-Input: json file that has the form
-[{ file_path: 'path/img.jpg', captions: ['a caption', ...] }, ...]
-example element in this list would look like
-{'captions': [u'A man with a red helmet on a small moped on a dirt road. ', u'Man riding a motor bike on a dirt road on the countryside.', u'A man riding on the back of a motorcycle.', u'A dirt path with a young person on a motor bike rests to the foreground of a verdant area with a bridge and a background of cloud-wreathed mountains. ', u'A man in a red shirt and a red hat is on a motorcycle on a hill side.'], 'file_path': u'val2014/COCO_val2014_000000391895.jpg', 'id': 391895}
-
-This script reads this json, does some basic preprocessing on the captions
-(e.g. lowercase, etc.), creates a special UNK token, and encodes everything to arrays
-
-Output: two folders of features
-"""
 
 from __future__ import absolute_import
 from __future__ import division
@@ -21,9 +9,10 @@ import json
 import argparse
 from random import shuffle, seed
 import string
-# non-standard dependencies:
+
+
 import h5py
-from six.moves import cPickle
+from six.moves import cPickle # non-standard dependencies:
 import numpy as np
 import torch
 import torchvision.models as models
@@ -37,7 +26,7 @@ from PIL import ImageFile, UnidentifiedImageError
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 image_size = 224
-
+#preprocessing
 preprocess = Compose([
     Resize((image_size, image_size), interpolation=Image.BICUBIC),
     CenterCrop((image_size, image_size)),
