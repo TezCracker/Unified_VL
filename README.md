@@ -41,7 +41,7 @@ gdrive download 1O_RU1iFh_sbItZCTkOHUrbVIQQ_89Djj
 
 
 Extract the CLIP features
-Please refer to `feature_extraction` for more details.
+Please refer to feature_extraction for more details.
 
 --Video-text dataset
 Please go to [VALUE](https://github.com/VALUE-Leaderboard/DataRelease) to download the ViT processed data.
@@ -52,43 +52,43 @@ The following scripts can run every approach with the best hyper-parameters.
 --Image dataset
 
 
-# Full fine-tuning
+Full fine-tuning
 cd VL-T5/
  scripts/image/full_finetuning.sh 1
 
-# Single Adapter
+Single Adapter
 cd VL-T5/
  scripts/image/single_adapter.sh 1
 
-# Multiple Adapters
+Multiple Adapters
 cd VL-T5/
  scripts/image/multiple_adapters.sh 1
 
-# Hyperformer
+Hyperformer
 cd VL-T5/
  scripts/image/hyperformer.sh 1
 
-# Single Compacter
+Single Compacter
 cd VL-T5/
  scripts/image/single_compacter.sh 1
 
-# Multiple Compacters
+Multiple Compacters
 cd VL-T5/
  scripts/image/multiple_compacters.sh 1
 
-# Single LoRA
+Single LoRA
 cd VL-T5/
  scripts/image/single_lora.sh 1
 
-# Multiple LoRA
+Multiple LoRA
 cd VL-T5/
  scripts/image/multiple_lora.sh 1
 
-# Single Prompt
+Single Prompt
 cd VL-T5/
  scripts/image/single_prompt.sh 1
 
-# Multiple Prompts
+Multiple Prompts
 cd VL-T5/
  scripts/image/multiple_prompts.sh 1
 
