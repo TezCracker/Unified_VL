@@ -20,16 +20,16 @@ python -c "import language_evaluation; language_evaluation.download('coco')"
 
 --Train VL-T5 with adapters
 ./VL-T5/
-    src/
-        modeling_t5.py modeling_bart.py                       <= VL-T5/VL-BART model classes
-        pretrain.py, pretrain_data.py, pretrain_model.py      <= pretraining
-        vqa.py, vqa_data.py vqa_model.py                      <= fine-tuning on downstream tasks 
-        multitask.py, multitask_data.py multiask_model.py     <= multitask learning on 7 downstream tasks
-        param.py                                              <= configuration
-        tokenization.py                                       <= custom tokenizer
-        utils.py, dist_utils.py                               <= utility functions
-    snap/                                                     <= store weight checkpoints
-    scripts/                                                  <= bash scripts for pretraining and finetuning
+ src/
+modeling_t5.py modeling_bart.py                       <= VL-T5/VL-BART model classes
+pretrain.py, pretrain_data.py, pretrain_model.py      <= pretraining
+vqa.py, vqa_data.py vqa_model.py                      <= fine-tuning on downstream tasks 
+multitask.py, multitask_data.py multiask_model.py     <= multitask learning on 7 downstream tasks
+param.py                                              <= configuration
+tokenization.py                                       <= custom tokenizer
+utils.py, dist_utils.py                               <= utility functions
+snap/                                                     <= store weight checkpoints
+scripts/                                                  <= bash scripts for pretraining and finetuning
 
 
 Image-text dataset
@@ -99,21 +99,21 @@ We recommend using [gdrive](https://github.com/prasmussen/gdrive) to download th
 
 
 --Pretrained Models
-- Download `snap/` from [Google Drive](https://drive.google.com/drive/folders/1_SBj4sZ0gUqfBon1gFBiNRAmfHv5w_ph?usp=sharing)
+- Download snap/ from [Google Drive](https://drive.google.com/drive/folders/1_SBj4sZ0gUqfBon1gFBiNRAmfHv5w_ph?usp=sharing)
 
 gdrive download 1_SBj4sZ0gUqfBon1gFBiNRAmfHv5w_ph --recursive
 
 
  COCO+VG pretraining (default)
-* `VL-T5/snap/pretrain/VLT5/Epoch30.pth`: VL-T5 pretrained for 30 epochs on COCO+VG
-* `VL-T5/snap/pretrain/VLBart/Epoch30.pth`: VL-BART pretrained for 30 epochs on COCO+VG
+* VL-T5/snap/pretrain/VLT5/Epoch30.pth: VL-T5 pretrained for 30 epochs on COCO+VG
+* VL-T5/snap/pretrain/VLBart/Epoch30.pth: VL-BART pretrained for 30 epochs on COCO+VG
 
 VCR pretraining (2nd stage)
-* `VL-T5/snap/vcr_pretrain/VLT5/Epoch20.pth`: VL-T5 further pretrained for 20 epochs on VCR
-* `VL-T5/snap/vcr_pretrain/VLBart/Epoch20.pth`: VL-BART further pretrained for 20 epochs on VCR
+* VL-T5/snap/vcr_pretrain/VLT5/Epoch20.pth: VL-T5 further pretrained for 20 epochs on VCR
+* VL-T5/snap/vcr_pretrain/VLBart/Epoch20.pth: VL-BART further pretrained for 20 epochs on VCR
 
 ---Dataset Preparation / Feature extraction
-- Download `datasets/` from [Google Drive](https://drive.google.com/drive/folders/1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf?usp=sharing)
+- Download datasets/ from [Google Drive](https://drive.google.com/drive/folders/1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf?usp=sharing)
 
 gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
 
